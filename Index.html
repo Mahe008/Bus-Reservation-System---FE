@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus reservation system</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="styleSheet" href="./assets/css/bus.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="bi-bus-front"></i>
+            <span>midBus</span>
+        </div>
+        <div id="travel-thro">
+            <ul>
+                <li><i class="bi bi-bus-front-fill"></i></li>
+                <li class="travel-type">Bus Tickets</li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-car-front-fill"></i></li>
+                <li class="travel-type">Cab Rental</li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-train-freight-front"></i></li>
+                <li class="travel-type">Train Tickets</li>
+            </ul>
+        </div>
+        <div id="acc-help">
+            <span class="acc-help">
+                <i class="bi bi-headset"></i>
+                help?
+            </span>
+            <span class="acc-help acc-list">
+                <i class="bi bi-person-circle"></i>
+                Account &#11206;
+                <div id="account-tab">
+                    <ul>
+                        <li><a>Cancel Ticket</a></li>
+                        <li><a>Change Travel Date</a></li>
+                        <li><a>Show My Ticket</a></li>
+                        <li><a>Email</a> / <a>SMS</a></li>
+                        <hr />
+                        <li><a href="./assets/html/login.html"><span>Login</span></a> / <a
+                                href="./assets/html/Register.html"><span>Register</span></a></li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </div>
+    <h2 id="head">Bus Ticket Booking</h2>
+    <form>
+        <fieldset class="container1">
+            <div>
+                <label for="from">FROM</label>
+                <input type="text" id="from" placeholder="Enter Source">
+            </div>
+            <span class="interchange">
+                <i class="bi bi-arrow-down-up"></i>
+            </span>
+            <div>
+                <label for="to">TO</label>
+                <input type="text" id="to" placeholder="Enter Destination">
+            </div>
+            <div>
+                <label for="date">Travel Date</label>
+                <input type="datetime-local" id="date">
+            </div>
+            <span id="cont1-note">
+                <img src="./assets/images/social_distance_FILL1_wght400_GRAD0_opsz24.png"> <b> Social
+                    Distancing</b>Introducing social distancing in select buses.<a href="#">Know More</a>
+            </span>
+            <legend>
+                <button id="search">
+                    <b>SEARCH BUS</b>
+                </button>
+            </legend>
+        </fieldset>
+    </form>
+    <div id="advertise">
+        <span class="ad-img1">
+            #ad
+        </span>
+        <span class="ad-img2">
+            #ad
+        </span>
+        <span class="ad-img3">
+            #ad
+        </span>
+    </div>
+    <h2 id="gov-head">Government Buses</h2>
+    <div id="gov-buses">
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/apsrtc_logo-1649928651.png">
+                </li>
+                <li><b>APSRTC</b></li>
+                Andhra Pradesh State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/gs_logo-1649928725.png">
+                </li>
+                <li><b>GSRTC</b></li>
+                Gujarat State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/hrtc_logo-1649928862.png">
+                </li>
+                <li><b>HRTC</b></li>
+                Himachal Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/jksrtc-1649932365.png">
+                </li>
+                <li><b>JKSRTC</b></li>
+                Jammu and Kashmir State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/ktc-1649929811.png">
+                </li>
+                <li><b>KTC</b></li>
+                Kadamba Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/msrtc_logo-1649928973.png">
+                </li>
+                <li><b>MSRTC</b></li>
+                Maharashtra State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/osrtc-1649930626.png">
+                </li>
+                <li><b>OSRTC</b></li>
+                Odisha State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/rsrtc_logo-1649929033.png">
+                </li>
+                <li><b>RSRTC</b></li>
+                Rajasthan State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/sbstc-1649930682.png">
+                </li>
+                <li><b>SBSTC</b></li>
+                South Bengal State Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/TNSTC-1649929085.png">
+                </li>
+                <li><b>TNSTC</b></li>
+                Tamil Nadu State Transport Corporation Limited
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/TSRTC-1649929129.png">
+                </li>
+                <li><b>TSRTC</b></li>
+                Telungana State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/upsrtc-1649930806.png">
+                </li>
+                <li><b>UPSRTC</b></li>
+                Uttar Pradesh State Road Transport Corporation
+            </ul>
+        </button>
+        <button>
+            <ul>
+                <li>
+                    <img src="https://gos3.ibcdn.com/wbtc_logo-1649930411.png">
+                </li>
+                <li><b>WBTC</b></li>
+                West Bengal Transport Corporation
+            </ul>
+        </button>
+    </div>
+    <h2 id="pri-head">3000+ Private Bus Operators<button>View All</button></h2>
+    <div id="pri-bus">
+        <ul>
+            <li>SRS Travels</li>
+            <li>Rarveen Travels</li>
+            <li>SRM Travels</li>
+            <li>Eagle Travels</li>
+            <li>Mahasagar Travels</li>
+        </ul>
+        <ul>
+            <li>Evacay Bus</li>
+            <li>Rajdhani Express</li>
+            <li>Infant Jesus</li>
+            <li>Kanker Roadways</li>
+            <li>Raj Express</li>
+        </ul>
+        <ul>
+            <li>Kallada Travels</li>
+            <li>VRL Travels</li>
+            <li>Patel Travels</li>
+            <li>Komitla</li>
+            <li>Sharma Travels</li>
+        </ul>
+        <ul>
+            <li>Chartered Speed</li>
+            <li>JBT Travels</li>
+            <li>Sri Krishna Travels</li>
+            <li>Shrinath Travels</li>
+            <li>Bengal Triger</li>
+        </ul>
+        <ul>
+            <li>Shatabdi Travels</li>
+            <li>Humsafar Travels</li>
+        </ul>
+        <br style="clear: left;">
+    </div>
+    <h1 id="faq">FAQs</h1>
+    <ul id="faq-list">
+        <li>General</li>
+        <li>Ticket-related</li>
+        <li>Payment</li>
+        <li>Cancellation & Refund</li>
+        <li>Insurance</li>
+    </ul>
+    <div class="ques-containers">
+        <h4 class="ques">Can I track the location of my booked bus online? <button class="plus">+</button></h4>
+        <p class="ans">Yes, you can track your bus online by using our bus tracking app feature called “Track My Bus”.
+            This feature allows passengers and their families to track the live bus tracking location. You may follow
+            your bus on a map and use the information to plan your trip to the boarding point and to get off at the
+            correct stop. Family and friends may also check the bus position to plan pick-ups and ensure your safety.
+        </p>
+    </div>
+    <div class="ques-containers">
+        <h4 class="ques">What are the advantages of purchasing a bus ticket with midBus? <button class="plus">+</button>
+        </h4>
+        <p class="ans">There are many advantages to purchasing online bus tickets with midBus. midBus is India's most
+            trusted bus ticket company, where you can book any type of private or Government owned buses. midBus allows
+            you to find the different types of buses, choose the preferred bus seats, and your nearest boarding and
+            dropping points. You can also filter the buses based on timings like morning, evening bus etc.</p>
+    </div>
+    <div class="ques-containers">
+        <h4 class="ques">What are the advantages of purchasing a bus ticket with midBus? <button class="plus">+</button>
+        </h4>
+        <p class="ans">There are many advantages to purchasing online bus tickets with midBus. midBus is India's most
+            trusted bus ticket company, where you can book any type of private or Government owned buses. midBus allows
+            you to find the different types of buses, choose the preferred bus seats, and your nearest boarding and
+            dropping points. You can also filter the buses based on timings like morning, evening bus etc.</p>
+    </div>
+    <div class="ques-containers">
+        <h4 class="ques">Does bus booking online cost me more? <button class="plus">+</button></h4>
+        <p class="ans">Not at all! The price of the bus ticket is the same as you would get from the bus operator/
+            counter of any bus ticket agency. midbus reduces the travel budget by comparing the bus ticket prices among
+            various operators, making it a more cost-effective choice. Therefore, online bus booking is increasingly
+            being recognized as a more convenient, efficient, and economical mode of securing travel arrangements.</p>
+    </div>
+    <div class="ques-containers">
+        <h4 class="ques">How can I get the discounts on the bus booking? <button class="plus">+</button></h4>
+        <p class="ans">To get the discount on bus booking please visit: https://www.midbus.in/info/OfferTerms and check
+            the available offers. Copy the coupon code and paste it during checkout to avail the discount.</p>
+    </div>
+
+    <div id="Topp">
+        <div class="Top">
+            <h4 class="top">Top Bus Routes <i class="bi bi-caret-down-fill"></i></h4>
+            <ul id="top-routes">
+                <li><a>Banglore to Chennai Bus</a></li>
+                <li><a>Hyderabad to Banglore Bus</a></li>
+                <li><a>Pune to Bangalore Bus</a></li>
+                <li><a>Mumbai to Bangalore Bus</a></li>
+                <li><a>More >></a></li>
+            </ul>
+        </div>
+        <div class="Top">
+            <h4 class="top">Top Cities <i class="bi bi-caret-down-fill"></i></h4>
+            <ul id="top-cities">
+                <li><a>Hyderabad Bus Tickets</a></li>
+                <li><a>Bangalore Bus Tickets</a></li>
+                <li><a>Chennai Bus Tickets</a></li>
+                <li><a>Pune Bus Tickets</a></li>
+                <li><a>More >></a></li>
+            </ul>
+        </div>
+        <div class="Top">
+            <h4 class="top">Top Operators <i class="bi bi-caret-down-fill"></i></h4>
+            <ul id="top-operators">
+                <li><a>No 1 Air Travels</a></li>
+                <li><a>YBM Travels(BLM)</a></li>
+                <li><a>Sri SMS Travels</a></li>
+                <li><a>Svkdt Travels</a></li>
+                <li><a>RKT Tours and Travels</a></li>
+                <li><a>More >></a></li>
+            </ul>
+        </div>
+    </div>
+    <a href="#travel-thro" id="top-up">
+        <button><i class="bi bi-arrow-up"></i></button>
+    </a>
+    <div id="end-link">
+        <ul class="logo">
+            <li>
+                <i class="bi-bus-front"></i>
+                <span>midBus</span>
+            </li>
+            <li>
+                midBus is the world's largest online bus ticket booking service trusted by over 25 million happy
+                customers globally. midBus offers bus ticket booking through its website, iOS and Android mobile apps
+                for all major routes.
+            </li>
+        </ul>
+        <ul>
+            <h3>About midBus</h3>
+            <li>About us</li>
+            <li>Investor Relations</li>
+            <li>Contact us</li>
+            <li>Mobile version</li>
+            <li>midBus on mobile</li>
+            <li>Sitemap</li>
+            <li>Offers</li>
+            <li>Careers</li>
+            <li>Values</li>
+        </ul>
+        <ul>
+            <h3>Info</h3>
+            <li>T&C</li>
+            <li>Pricacy policy</li>
+            <li>FAQ</li>
+            <li>Blog</li>
+            <li>Bus operator registration</li>
+            <li>Agent registration</li>
+            <li>Insurance partner</li>
+            <li>User agreement</li>
+        </ul>
+        <ul>
+            <h3>Global Sites</h3>
+            <li>India</li>
+            <li>Singapore</li>
+            <li>Malaysia</li>
+            <li>Indonesia</li>
+            <li>Peru</li>
+            <li>Colombia</li>
+        </ul>
+        <ul>
+            <h3>Our Partners</h3>
+            <li>Goibibo Bus</li>
+            <li>Goibibo Hotels</li>
+            <li>Makemytrip Bus</li>
+            <li>Makemytrip Hotels</li>
+        </ul>
+    </div>
+    <footer>
+        <p>Ⓒ 2023 Midbus India Pvt Ltd. All rights reserved</p>
+        <ul>
+            <li><i class="bi bi-facebook"></i></li>
+            <li><i class="bi bi-linkedin"></i></li>
+            <li><i class="bi bi-twitter"></i></li>
+            <li><i class="bi bi-instagram"></i></li>
+        </ul>
+    </footer>
+
+    <script src="./assets/js/bus.js"></script>
+</body>
+
+</html>
